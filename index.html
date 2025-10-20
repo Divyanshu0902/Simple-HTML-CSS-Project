@@ -2,42 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopify Hero Section</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="header">
-        <div class="navBar">
-            <div class="buttons">Clothes</div>
-            <div class="buttons">Groceries</div>
-            <div class="buttons">Electronics</div>
-            <div class="buttons">Stationery</div>
-            <div class="buttons">Fruits</div>
-            <div class= "buttons" id="lastbutton">Buy Now</div>
-        </div>
+  <div class="header">
+    <div class="navBar">
+      <div class="logo">Shopify</div>
+
+      <!-- Hamburger Menu Icon -->
+      <div class="menu-icon" id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="nav-links" id="nav-links">
+        <div class="buttons">Clothes</div>
+        <div class="buttons">Groceries</div>
+        <div class="buttons">Electronics</div>
+        <div class="buttons">Stationery</div>
+        <div class="buttons">Fruits</div>
+        <div class="buttons" id="lastbutton">Buy Now</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle">
+    <div class="left">
+      <div class="top">Shopify</div>
+      <div class="bottom">
+        Get a seamless Shopping Experience through our broad <br />
+        network of retailers, distributors and delivery persons.
+      </div>
+
+      <div class="ctaHolder">
+        <div class="cta">Buy Now</div>
+        <div class="cta2">Explore</div>
+      </div>
     </div>
 
-    <div class="middle">
-        <div class="left">
-            <div class="top">Shopify</div>
-
-            <div class="bottom">Get a seamless Shopping Experience through our broad <br> network of retailers, distributers
-                and delivery persons.</div>
-
-            <div class="ctaHolder">
-                <div class="cta">Buy Now</div>
-                <div class="cta2">Explore</div>
-            </div>
-        </div>
-        <div class="right">
-            <img src= "9.jpg" alt="">
-        </div>
+    <div class="right">
+      <img src="9.jpg" alt="Hero Image" />
     </div>
+  </div>
 
-    <div class="footer"></div>
+  <div class="footer"></div>
+
+  <!-- JavaScript for toggle -->
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuIcon.classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>
