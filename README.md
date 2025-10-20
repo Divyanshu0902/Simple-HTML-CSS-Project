@@ -1,6 +1,6 @@
 # A Minimalistic Landing Page
 
-![](/images/Webpage_Preview.png)
+![](Webpage_Preview.png)
 
 >This is a simple minimalistic **Landing Page** for an imaginary e-Commerce brand.
 ---
